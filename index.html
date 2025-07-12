@@ -6,17 +6,10 @@
     <title>Dev - Refri</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" src="./assets/Morango-refrigerante.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <main>
-      <div class="item active">
+      <div class="item active" style="--background: #ea3d41">
         <div class="item__title">Morango</div>
         <img
           src="./assets/Morango-refrigerante.png"
@@ -30,7 +23,7 @@
         />
       </div>
 
-      <div class="item">
+      <div class="item" style="--background: #2d5643">
         <div class="item__title">Abacate</div>
         <img
           src="./assets/Abacate-refrigerante.png"
@@ -44,7 +37,7 @@
         />
       </div>
 
-      <div class="item hidden">
+      <div class="item" style="--background: #e7a043">
         <div class="item__title">Laranja</div>
         <img
           src="./assets/Laranja-refrigerante.png"
@@ -59,13 +52,10 @@
       </div>
 
       <div class="arrow">
-        <button class="arrow__right">
-          <i class="fa-solid fa-arrow-right fa-2xs" style="color: #000000"></i>
-        </button>
-        <button class="arrow__left">
-          <i class="fa-solid fa-arrow-left fa-2xs" style="color: #000000"></i>
-        </button>
+        <button id="prev" style="--left: 15px"><</button>
+        <button id="next" style="--right: 15px">></button>
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
