@@ -78,3 +78,18 @@
 #next {
   right: var(--right);
 }
+
+@keyframes toActive {
+  from {
+    top: 100%;
+    opacity: 0;    
+  }
+}
+
+.item.active img.item__fruit {
+  animation: toActive 0.5s ease-in-out 1;
+}
+
+.item.active .item__title {
+  animation: toActive 0.5s ease-in-out 1;
+}
