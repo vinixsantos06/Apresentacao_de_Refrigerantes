@@ -45,6 +45,11 @@
   left: 50%;
 }
 
+.item__refri:hover {
+  width: 650px;
+  transition: 0.8s;
+}
+
 .item__fruit {
   width: 90%;
   position: absolute;
@@ -69,6 +74,17 @@
   font-size: x-large;
   font-family: monospace;
   cursor: pointer;
+}
+
+#prev:active, #next:active {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+#prev:hover, #next:hover {
+  width: 55px;
+  height: 55px;
+  transition: 0.3s;
 }
 
 #prev {
